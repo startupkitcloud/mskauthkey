@@ -1,0 +1,5 @@
+com/mangobits/startupkit/userauthkey/UserAuthKeyDAO.class
+com/mangobits/startupkit/userauthkey/UserAuthKeyServiceImpl.class
+com/mangobits/startupkit/userauthkey/UserAuthKey.class
+com/mangobits/startupkit/userauthkey/UserAuthKeyTypeEnum.class
+com/mangobits/startupkit/userauthkey/UserAuthKeyService.class
