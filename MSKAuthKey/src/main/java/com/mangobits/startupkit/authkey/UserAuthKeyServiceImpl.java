@@ -1,4 +1,4 @@
-package com.mangobits.startupkit.userauthkey;
+package com.mangobits.startupkit.authkey;
 
 import java.util.Date;
 import java.util.HashMap;

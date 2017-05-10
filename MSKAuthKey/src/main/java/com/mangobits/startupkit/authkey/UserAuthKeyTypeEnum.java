@@ -1,4 +1,4 @@
-package com.mangobits.startupkit.userauthkey;
+package com.mangobits.startupkit.authkey;
 
 public enum UserAuthKeyTypeEnum {
 	SMS,

@@ -1,5 +1,5 @@
-/Users/diego/_development/workspace_eclipse/mangobits/startupkit/workspace/MSKAuthKey/src/main/java/com/mangobits/startupkit/userauthkey/UserAuthKeyServiceImpl.java
-/Users/diego/_development/workspace_eclipse/mangobits/startupkit/workspace/MSKAuthKey/src/main/java/com/mangobits/startupkit/userauthkey/UserAuthKey.java
-/Users/diego/_development/workspace_eclipse/mangobits/startupkit/workspace/MSKAuthKey/src/main/java/com/mangobits/startupkit/userauthkey/UserAuthKeyDAO.java
-/Users/diego/_development/workspace_eclipse/mangobits/startupkit/workspace/MSKAuthKey/src/main/java/com/mangobits/startupkit/userauthkey/UserAuthKeyTypeEnum.java
-/Users/diego/_development/workspace_eclipse/mangobits/startupkit/workspace/MSKAuthKey/src/main/java/com/mangobits/startupkit/userauthkey/UserAuthKeyService.java
+/Users/diego/_development/workspace_eclipse/mangobits/startupkit/mskauthkey_git/MSKAuthKey/src/main/java/com/mangobits/startupkit/authkey/UserAuthKeyTypeEnum.java
+/Users/diego/_development/workspace_eclipse/mangobits/startupkit/mskauthkey_git/MSKAuthKey/src/main/java/com/mangobits/startupkit/authkey/UserAuthKeyService.java
+/Users/diego/_development/workspace_eclipse/mangobits/startupkit/mskauthkey_git/MSKAuthKey/src/main/java/com/mangobits/startupkit/authkey/UserAuthKey.java
+/Users/diego/_development/workspace_eclipse/mangobits/startupkit/mskauthkey_git/MSKAuthKey/src/main/java/com/mangobits/startupkit/authkey/UserAuthKeyDAO.java
+/Users/diego/_development/workspace_eclipse/mangobits/startupkit/mskauthkey_git/MSKAuthKey/src/main/java/com/mangobits/startupkit/authkey/UserAuthKeyServiceImpl.java

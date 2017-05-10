@@ -1,4 +1,4 @@
-package com.mangobits.startupkit.userauthkey;
+package com.mangobits.startupkit.authkey;
 
 import com.mangobits.startupkit.core.utils.AbstractDAO;
 
