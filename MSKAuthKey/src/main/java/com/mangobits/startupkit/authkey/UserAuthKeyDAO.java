@@ -1,6 +1,6 @@
 package com.mangobits.startupkit.authkey;
 
-import com.mangobits.startupkit.core.utils.AbstractDAO;
+import com.mangobits.startupkit.core.dao.AbstractDAO;
 
 
 public class UserAuthKeyDAO extends AbstractDAO<UserAuthKey> {
@@ -11,7 +11,7 @@ public class UserAuthKeyDAO extends AbstractDAO<UserAuthKey> {
 	
 
 	@Override
-	protected Object getId(UserAuthKey obj) {
+	public Object getId(UserAuthKey obj) {
 		return obj.getId();
 	}
 }
