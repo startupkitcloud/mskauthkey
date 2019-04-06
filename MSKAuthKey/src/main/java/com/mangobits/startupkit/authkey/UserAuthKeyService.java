@@ -2,15 +2,12 @@ package com.mangobits.startupkit.authkey;
 
 import javax.ejb.Local;
 
-import com.mangobits.startupkit.core.exception.ApplicationException;
-import com.mangobits.startupkit.core.exception.BusinessException;
-
 @Local
 public interface UserAuthKeyService {
 
 	
-	UserAuthKey createKey(String idUser, UserAuthKeyTypeEnum type) throws BusinessException, ApplicationException;
+	UserAuthKey createKey(String idUser, UserAuthKeyTypeEnum type) throws Exception;
 	
 	
-	Boolean validateKey(UserAuthKey key) throws BusinessException, ApplicationException;
+	Boolean validateKey(UserAuthKey key) throws Exception;
 }
