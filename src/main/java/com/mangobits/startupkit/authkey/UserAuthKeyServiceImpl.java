@@ -6,19 +6,12 @@ import javax.ejb.TransactionManagementType;
 import javax.enterprise.inject.New;
 import javax.inject.Inject;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 @Stateless
 @TransactionManagement(TransactionManagementType.CONTAINER)
 public class UserAuthKeyServiceImpl implements UserAuthKeyService {
-	
 
-//	@EJB
-//	private UserService userService;
-	
-	
 	
 	@Inject
 	@New
@@ -60,7 +53,7 @@ public class UserAuthKeyServiceImpl implements UserAuthKeyService {
 	@Override
 	public Boolean validateKey(UserAuthKey key) throws Exception {
 		
-		Boolean validated = false;
+		boolean validated = false;
 
 		UserAuthKey keyBase = loadKeyByUser(key.getIdUser(), key.getType());
 
@@ -75,16 +68,10 @@ public class UserAuthKeyServiceImpl implements UserAuthKeyService {
 	
 	
 	private UserAuthKey loadKeyByUser(String idUser, UserAuthKeyTypeEnum type) throws Exception{
-		
-		UserAuthKey key = null;
-
-		Map<String, Object> params = new HashMap<>();
-		params.put("idUser", idUser);
-		params.put("type", type);
-
-		key = userAuthKeyDAO.retrieve(params);
-		
-		return key;
+		return userAuthKeyDAO.retrieve(userAuthKeyDAO.createBuilder()
+				.appendParamQuery("idUser", idUser)
+				.appendParamQuery("type", type)
+				.build());
 	}
 	
 	
@@ -97,13 +84,13 @@ public class UserAuthKeyServiceImpl implements UserAuthKeyService {
 
 		while(!numberFound){
 
-			Integer number = (int)(Math.random() * 10000);
+			int number = (int)(Math.random() * 10000);
 			numberStr = String.valueOf(number);
 
-			Map<String, Object> params = new HashMap<>();
-			params.put("key", numberStr);
+			UserAuthKey key = userAuthKeyDAO.retrieve(userAuthKeyDAO.createBuilder()
+					.appendParamQuery("key", numberStr)
+					.build());
 
-			UserAuthKey key = userAuthKeyDAO.retrieve(params);
 			numberFound = number > 999 && key == null;
 		}
 		
