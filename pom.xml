@@ -25,7 +25,6 @@
         
         <!-- msk config versions -->
 		<msk-core-version>2.0.1</msk-core-version>
-		<msk-rs-version>1.2.0</msk-rs-version>
     </properties>
     
  
@@ -34,12 +33,6 @@
     		<groupId>com.mangobits.startupkit.core</groupId>
     		<artifactId>MSKCore</artifactId>
     		<version>${msk-core-version}</version>
-		</dependency>
-
-		<dependency> 
-    		<groupId>com.mangobits.startupkit.ws</groupId>
-    		<artifactId>MSKRs</artifactId> 
-    		<version>${msk-rs-version}</version>
 		</dependency>
     </dependencies>
     
