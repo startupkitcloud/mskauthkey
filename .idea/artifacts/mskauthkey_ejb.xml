@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="mskauthkey:ejb">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>mskauthkey</module>
+        <packaging>ejb</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="MSKAuthKey.jar">
+      <element id="artifact" artifact-name="mskauthkey:ejb exploded" />
+    </root>
+  </artifact>
+</component>
