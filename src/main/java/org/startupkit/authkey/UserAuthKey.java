@@ -1,12 +1,10 @@
-package com.mangobits.startupkit.authkey;
+package org.startupkit.authkey;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.mangobits.startupkit.core.annotation.MSKEntity;
-import com.mangobits.startupkit.core.annotation.MSKId;
+import org.startupkit.core.annotation.MSKEntity;
+import org.startupkit.core.annotation.MSKId;
 
 import java.util.Date;
 
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @MSKEntity(name="userAuthKey")
 public class UserAuthKey {
 
