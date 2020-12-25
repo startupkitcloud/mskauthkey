@@ -1,7 +1,7 @@
-package com.mangobits.startupkit.authkey;
+package org.startupkit.authkey;
 
-import com.mangobits.startupkit.core.dao.AbstractDAO;
 
+import org.startupkit.core.dao.AbstractDAO;
 
 public class UserAuthKeyDAO extends AbstractDAO<UserAuthKey> {
 	

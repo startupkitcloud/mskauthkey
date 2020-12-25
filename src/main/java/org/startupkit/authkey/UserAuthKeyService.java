@@ -1,4 +1,4 @@
-package com.mangobits.startupkit.authkey;
+package org.startupkit.authkey;
 
 import javax.ejb.Local;
 
